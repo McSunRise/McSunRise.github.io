@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Words List</title>
+</head>
+<body>
+    <table>
+    <tbody>
+    <tr>
+      <td>Origin</td>
+      <td>Translate</td>
+    </tr>
+
+      {% for i,j in dictionary.items %}
+        <tr>
+          <td>{{ i }}</td>
+          <td>{{ j }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+    </table>
+    <a href="add_word">Add word</a>
+</body>
+</html>

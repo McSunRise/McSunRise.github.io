@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Word</title>
+</head>
+<body>
+    <h1>Add word</h1>
+    <form method="POST" action="">
+        <label for="word1">Word:</label>
+        <input type="text" id="word1" name="word1" required>
+        <label for="word2">Translation:</label>
+        <input type="text" id="word2" name="word2" required>
+        <input type="submit" value="Отправить">
+        {% csrf_token %}
+    </form>
+    <a href="home">Return Home</a>
+</body>
+</html>
